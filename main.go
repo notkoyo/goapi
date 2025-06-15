@@ -15,7 +15,7 @@ func setupRouter() *gin.Engine {
 
 	// Ping test
 	r.GET("/ping", func(c *gin.Context) {
-		c.String(http.StatusOK, "pong")
+		c.JSON(http.StatusOK, "pong")
 	})
 
 	return r
